@@ -56,14 +56,14 @@ const DrawerComp = () => {
 
           </ListItem>
 
-          <ListItem className={classes.listed }  button onClick={() => setOpenDrawer(false)}>
+          <ListItem className={classes.listed}  button onClick={() => setOpenDrawer(false)}>
               <ListItemText >
                 Company
               </ListItemText>
              <ExpandMoreIcon/>
           </ListItem>
 
-          <ListItem  className={classes.listed }  button onClick={handleOpenMenu} >
+          <ListItem  className={classes.listed}  button onClick={handleOpenMenu} >
               <ListItemText>
                   Connect
               </ListItemText>
@@ -74,9 +74,9 @@ const DrawerComp = () => {
         </List>
         <List className={classes.listedItem } >
 
-        <hr className={classes.divider }/>
+        <hr className={classes.divider}/>
 
-         <ListItem className={classes.listed } button onClick={() => setOpenDrawer(false)}>
+         <ListItem className={classes.listed} button onClick={() => setOpenDrawer(false)}>
             <ListItemIcon >
               <Button
                 aria-controls='menu'
@@ -87,7 +87,7 @@ const DrawerComp = () => {
             </ListItemIcon>
           </ListItem>  
 
-          <ListItem className={classes.listed } button onClick={() => setOpenDrawer(false)}>
+          <ListItem className={classes.listed} button onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <Button     
                 aria-controls='menu'
@@ -99,7 +99,6 @@ const DrawerComp = () => {
             </ListItemIcon>
           </ListItem>  
         </List>
-
       </Drawer>
       <IconButton
         className={classes.iconButtonContainer}

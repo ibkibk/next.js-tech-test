@@ -7,9 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
     flexGrow: 1,
     width: "100%",
     background: "red",
-      [theme.breakpoints.down('xs')]: {
-    padding:"0",
-    },
+ 
   },
 
   menuButton: {
@@ -51,7 +49,7 @@ import { makeStyles } from '@material-ui/core/styles';
     justifyContent:"center",
     padding:"0 100px 0 100px",
     backgroundColor:"hsl(356, 100%, 66%)",
-    [theme.breakpoints.down('600')]: {
+    [theme.breakpoints.down('xs')]: {
     padding:"0",
     },
   },
