@@ -1,0 +1,47 @@
+.container{
+    background-color: hsl(240, 10%, 16%);
+    height: 370px;
+    color: white;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    border-radius: 0 120px 0 0;
+
+}
+
+.parag{
+    margin-bottom: 40px;
+}
+
+.imageContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        margin-top: 70px;
+   }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+.container{
+    padding: 100px 0 100px 0;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product,.Company,.Connect{
+    text-align: center;
+}
+}
+
+
