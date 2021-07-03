@@ -21,7 +21,7 @@ import { makeStyles } from '@material-ui/core/styles';
        },
 
       parag:{
-        fontSize:"18px"
+        fontSize:"16px"
        },
 
       buttonContainer:{

@@ -4,13 +4,13 @@ import logos from "../../../public/images/illustration-laptop-desktop.svg"
 import logo from "../../../public/images/illustration-laptop-mobile.svg"
 import style from "../../styles/Computer.module.css"
 import { useMediaQuery } from 'react-responsive'
-import {Container,Content,ImageContainer} from "../../styles/computer"
 
 const Computer = () => {
 
     const isDesktopOrMobile = useMediaQuery({
     query: '(max-device-width: 700px)'
   })
+
 
 
     return (

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 .container{
     background-color: hsl(240, 10%, 16%);
     height: 370px;
@@ -11,6 +13,7 @@
 }
 
 .parag{
+    font-family: 'Overpass', sans-serif;
     margin-bottom: 40px;
 }
 

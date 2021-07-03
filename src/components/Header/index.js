@@ -25,22 +25,20 @@ import useStyles from '../../styles/header';
 const Header = () => {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
-    const [isIconOpen,setIsIconOpen] =useState(false);
+    const [isIconOpen,setIsIconOpen] = useState(false);
 
     const theme = useTheme(); 
-
-    const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
+    const isMatch = useMediaQuery(theme.breakpoints.down('600px'));
 
 
   const handleOpenMenu = e => {
     setAnchorEl(e.currentTarget);
     setIsIconOpen((prev)=>!prev)
-
-    };
+  };
 
   const handleCloseMenu = () => {
     setAnchorEl(null);
-    };
+  };
 
 
   return (
@@ -63,7 +61,7 @@ const Header = () => {
           </IconButton>
              {isMatch ? <DrawerComp/>:<Fragment>
            <Typography variant="h8" className={classes.title}></Typography>
-          <Typography variant="h6" className={classes.title}>
+           <Typography variant="h6" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }   >
                          <Link className={classes.Link} >   
@@ -72,7 +70,7 @@ const Header = () => {
                         <ExpandMoreIcon/>
                       </ListItem> 
                    </Typography>
-          </Typography>
+           </Typography>
            <Typography variant="h6" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }   >
@@ -82,7 +80,7 @@ const Header = () => {
                          <ExpandMoreIcon/>
                        </ListItem> 
                    </Typography>
-          </Typography>
+           </Typography>
            <Typography variant="h6" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }  button onClick={handleOpenMenu} >
