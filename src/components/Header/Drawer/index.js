@@ -111,35 +111,29 @@ const DrawerComp = () => {
       <Menu
         elevation={0}
         className={classes.menu}
-        // style={{  padding:"100px",  marginTop: '130px',marginLeft: '-23px'  }}
         id='menu'
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleCloseMenu}>
        <List        
         className={classes.list}
-        // style={{borderRadius:"5px", background:"rgb(210, 210, 210)"}}
         >
         <Links href="/contact">
           <MenuItem 
            className={classes.menuItem}
-          //  style={{  padding:"20px 40px 10px 40px",  marginLeft:"10px",textDecoration:"none" }}
            onClick={handleCloseMenu}>
              Contact
           </MenuItem>
         </Links>
         <MenuItem           
            className={classes.newsLetter}
-          //  style={{padding:"20px 40px 10px 40px"}} 
            onClick={handleCloseMenu}>
              News Letter
              </MenuItem>
         <MenuItem
         className={classes.linkedIn}
-        //  style={{padding:"20px 40px 10px 40px",  marginLeft:"10px" }} 
          onClick={handleCloseMenu}>LinkedIn</MenuItem>
       </List>
-
       </Menu>
     </>
   );
