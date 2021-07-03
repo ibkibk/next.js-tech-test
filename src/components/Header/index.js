@@ -33,13 +33,13 @@ const Header = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
 
 
-    const handleOpenMenu = e => {
+  const handleOpenMenu = e => {
     setAnchorEl(e.currentTarget);
     setIsIconOpen((prev)=>!prev)
 
     };
 
-    const handleCloseMenu = () => {
+  const handleCloseMenu = () => {
     setAnchorEl(null);
     };
 
