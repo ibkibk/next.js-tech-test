@@ -21,14 +21,15 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { Fragment } from 'react';
 import useStyles from '../../styles/header';
 
-
 const Header = () => {
     const classes = useStyles();
+
     const [anchorEl, setAnchorEl] = useState(null);
     const [isIconOpen,setIsIconOpen] = useState(false);
 
     const theme = useTheme(); 
-    const isMatch = useMediaQuery(theme.breakpoints.down('600px'));
+    
+    const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
 
 
   const handleOpenMenu = e => {

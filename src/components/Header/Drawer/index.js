@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,Fragment } from 'react';
 import {
   List,
   ListItem,
@@ -18,7 +18,8 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import useStyles from '../../../styles/drawer';
 
 const DrawerComp = () => {
-
+  
+  const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [addMargin,setAddMargin] =useState(false);
@@ -38,9 +39,8 @@ const DrawerComp = () => {
 
     };
 
-  const classes = useStyles();
   return (
-    <>
+    <Fragment>
       <Drawer
         anchor='top'
         classes={{ paper: classes.drawerContainer }}
@@ -53,29 +53,22 @@ const DrawerComp = () => {
                 Product 
               </ListItemText>
                <ExpandMoreIcon/>
-
           </ListItem>
-
           <ListItem className={classes.listed}  button onClick={() => setOpenDrawer(false)}>
               <ListItemText >
                 Company
               </ListItemText>
              <ExpandMoreIcon/>
           </ListItem>
-
           <ListItem  className={classes.listed}  button onClick={handleOpenMenu} >
               <ListItemText>
                   Connect
               </ListItemText>
              {isIconOpen? <ExpandLessIcon/>:<ExpandMoreIcon/>}
-
           </ListItem>  
-          
         </List>
         <List className={classes.listedItem } >
-
         <hr className={classes.divider}/>
-
          <ListItem className={classes.listed} button onClick={() => setOpenDrawer(false)}>
             <ListItemIcon >
               <Button
@@ -86,7 +79,6 @@ const DrawerComp = () => {
                 >Login</Button>
             </ListItemIcon>
           </ListItem>  
-
           <ListItem className={classes.listed} button onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <Button     
@@ -106,7 +98,6 @@ const DrawerComp = () => {
         >
         <MenuIcon className={classes.menuIconToggle} />
       </IconButton>
-
       <Menu
         elevation={0}
         className={classes.menu}
@@ -134,7 +125,7 @@ const DrawerComp = () => {
          onClick={handleCloseMenu}>LinkedIn</MenuItem>
       </List>
       </Menu>
-    </>
+    </Fragment>
   );
 };
 
