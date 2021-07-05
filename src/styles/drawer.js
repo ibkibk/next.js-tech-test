@@ -20,9 +20,12 @@ import { makeStyles } from '@material-ui/core/styles';
     },
 
     acount: {
+      fontFamily: "'Ubuntu', sans-serif",
       textAlign:"center",
       width: "100px",
       borderRadius:"40px",
+      textTransform:"none",
+      fontSize:"18px",
        '&:hover': {
              borderRadius:"40px",
              background: 'white',
@@ -36,6 +39,7 @@ import { makeStyles } from '@material-ui/core/styles';
   },
 
   listed:{
+    
     '&:hover': {
              background: 'transparent',
            },
@@ -72,10 +76,13 @@ import { makeStyles } from '@material-ui/core/styles';
       background:"rgb(210, 210, 210)"
     },
 
+   
+
     menuItem:{
       padding:"20px 40px 10px 40px",  
       marginLeft:"10px",
       textDecoration:"none"
+      
     },
 
     newsLetter:{

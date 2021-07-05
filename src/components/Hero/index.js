@@ -7,13 +7,13 @@ const Hero = () => {
     return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-         <h1 className={classes.header}>A Modern Publising Platform</h1>
+         <h1 className={classes.header}>A modern publising platform</h1>
          <p className={classes.parag}>Grow your audience and build your online brand</p>
          <div className={classes.buttonContainer}>
-            <Button className={classes.acount}>
+            <Button className={classes.StartButton}>
               Start for free 
             </Button>
-            <Button className={classes.acounts}>
+            <Button className={classes.LearnButton}>
               Learn More
             </Button>
          </div>
