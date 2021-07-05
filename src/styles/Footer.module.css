@@ -22,6 +22,18 @@
     margin-top: 20px;
 }
 
+/* .p:hover {
+  text-decoration: 2px solid white;
+  cursor: pointer;
+} */
+.PTag:hover{
+  text-decoration: underline;
+;
+  cursor: pointer;
+
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     .container{

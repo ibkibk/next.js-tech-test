@@ -25,8 +25,18 @@ import { makeStyles } from '@material-ui/core/styles';
 
  },
 
+
+  login:{
+    background: "transparent",
+    borderRadius:"40px",
+       [theme.breakpoints.down('sm')]: {
+    marginLeft: '10px',
+    },
+
+  },
+
   acount: {
-    marginLeft: '20px',
+    marginLeft: '-10px',
     width: "100px",
     background: "hsl(356, 100%, 66%)",
     borderRadius:"40px",

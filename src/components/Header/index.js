@@ -26,7 +26,7 @@ const Header = () => {
 
     const [anchorEl, setAnchorEl] = useState(null);
     const [isIconOpen,setIsIconOpen] = useState(false);
-
+    
     const theme = useTheme(); 
     
     const isMatch = useMediaQuery(theme.breakpoints.down('xs'));
@@ -62,7 +62,7 @@ const Header = () => {
           </IconButton>
              {isMatch ? <DrawerComp/>:<Fragment>
            <Typography variant="h8" className={classes.title}></Typography>
-           <Typography variant="h6" className={classes.title}>
+           <Typography variant="h8" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }   >
                          <Link className={classes.Link} >   
@@ -72,7 +72,7 @@ const Header = () => {
                       </ListItem> 
                    </Typography>
            </Typography>
-           <Typography variant="h6" className={classes.title}>
+           <Typography variant="h8" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }   >
                          <Link className={classes.Link} >   
@@ -82,7 +82,7 @@ const Header = () => {
                        </ListItem> 
                    </Typography>
            </Typography>
-           <Typography variant="h6" className={classes.title}>
+           <Typography variant="h8" className={classes.title}>
                    <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }  button onClick={handleOpenMenu} >
                          <Link className={classes.Link} >   
@@ -99,14 +99,21 @@ const Header = () => {
           <Typography variant="h8" className={classes.title}></Typography>
           <Typography variant="h8" className={classes.title}></Typography>
           <Typography variant="h8" className={classes.title}></Typography>
-          <Button color="inherit">Login</Button>
+          <Button
+              aria-controls='menu'
+              className={classes.login}
+              disableElevation
+              disableRipple
+              variant='contained'
+              color='secondary' 
+              >Login</Button>
           <Button   
               aria-controls='menu'
               className={classes.acount}
               disableElevation
               disableRipple
               variant='contained'
-              color='secondary' color="inherit"
+              color='secondary' 
               >
             Sign Up
           </Button>
