@@ -4,7 +4,6 @@ import Hero from '../components/Hero'
 import Computer from '../components/Computer'
 import PhoneComp from '../components/Phone'
 import Footer from '../components/Footer'
-
 export default function Home() {
   return (
     <div>

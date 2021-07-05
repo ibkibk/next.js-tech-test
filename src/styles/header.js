@@ -6,13 +6,19 @@ import { makeStyles } from '@material-ui/core/styles';
   root: {
     flexGrow: 1,
     width: "100%",
-    background: "red",
+    background:"red",
  
   },
 
   menuButton: {
     marginRight: theme.spacing(2),
+
+      '&:hover': {
+             background: 'transparent',
+           },
   },
+
+  
 
   title: {
     flexGrow: 1,
@@ -33,13 +39,21 @@ import { makeStyles } from '@material-ui/core/styles';
     marginLeft: '10px',
     },
 
+    '&:hover': {
+             color:"hsl(356, 100%, 66%)" ,
+             background: 'white',
+           },
+
   },
 
   acount: {
-    marginLeft: '-10px',
     width: "100px",
     background: "hsl(356, 100%, 66%)",
     borderRadius:"40px",
+
+    [theme.breakpoints.down('md')]: {
+    marginLeft: '-10px',
+    },
        '&:hover': {
              borderRadius:"40px",
              background: 'hsl(13, 100%, 72%)',
@@ -55,7 +69,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
   appbar:{
-    height: "200px",
+    height: "150px",
     justifyContent:"center",
     padding:"0 100px 0 100px",
     backgroundColor:"hsl(356, 100%, 66%)",

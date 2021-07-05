@@ -1,7 +1,6 @@
 import React from 'react'
-import Image from "next/image"
-import logos from "../../../public/images/illustration-editor-desktop.svg"
-import logo from "../../../public/images/illustration-editor-mobile.svg"
+import EditorDesktop from "../../../public/images/illustration-editor-desktop.svg"
+import EditorMobile from "../../../public/images/illustration-editor-mobile.svg"
 import style from "../../styles/Design.module.css"
 import { useMediaQuery } from 'react-responsive'
 
@@ -34,7 +33,7 @@ const Design = () => {
             </div>
         </div>
         <div className={style.imageContainer}>
-            {isDesktopOrLaptop?<img className={style.image} src={logo} /> :<img className={style.image} src={logos} /> }
+            {isDesktopOrLaptop?<img className={style.image} src={EditorMobile} /> :<img className={style.image} src={EditorDesktop} /> }
              
         </div>
     </div>

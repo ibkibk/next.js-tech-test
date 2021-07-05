@@ -9,16 +9,17 @@ import {
   Button,
   Menu, 
   MenuItem,
-  
-  
 } from '@material-ui/core';
 import Links from "next/link"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import useStyles from '../../../styles/drawer';
-import MenuIcon from '@material-ui/icons/Menu';
+import CloseLogo from "../../../../public/images/icon-close.svg"
+import HumburgerLogo from "../../../../public/images/icon-hamburger.svg"
+
+
+
 const DrawerComp = () => {
-  
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -30,20 +31,19 @@ const DrawerComp = () => {
         setAnchorEl(e.currentTarget);
         setAddMargin(true)
         setIsIconOpen((prev)=>!prev)
-
     };
 
     const handleCloseMenu = () => {
         setAnchorEl(null);
         setAddMargin(false)
-
     };
 
   return (
     <Fragment>
       <Drawer
         anchor='top'
-        classes={{ paper: classes.drawerContainer }}
+        className={classes.drawer}
+        classes={{ paper: classes.drawerContainer}}
         onClose={() => setOpenDrawer(false)}
         open={openDrawer}
         onOpen={() => setOpenDrawer(true)}>
@@ -79,7 +79,10 @@ const DrawerComp = () => {
                 >Login</Button>
             </ListItemIcon>
           </ListItem>  
-          <ListItem className={classes.listed} button onClick={() => setOpenDrawer(false)}>
+          <ListItem 
+               className={classes.listed} 
+               button 
+               onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <Button     
                 aria-controls='menu'
@@ -96,7 +99,7 @@ const DrawerComp = () => {
         className={classes.iconButtonContainer}
         onClick={() => setOpenDrawer(!openDrawer)}
         >
-        <MenuIcon className={classes.menuIconToggle} />
+          {openDrawer?<img src={CloseLogo}  />:<img src={HumburgerLogo}  />} 
       </IconButton>
       <Menu
         elevation={0}

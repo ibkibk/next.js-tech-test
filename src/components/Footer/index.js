@@ -1,12 +1,12 @@
 import React from 'react'
-import logos from "../../../public/images/logo.svg"
+import logo from "../../../public/images/logo.svg"
 import style from "../../styles/Footer.module.css"
 
 const Footer = () => {
     return (
         <div className={style.container}>
             <div className={style.imageContainer} >
-               <img className={style.image} src={logos} alt="" />
+               <img className={style.image} src={logo} alt="" />
             </div>
             <div className={style.Product}>
                 <h2 className={style.parag}>Product</h2>

@@ -1,7 +1,6 @@
 import React from 'react'
-// import Image from "next/image"
-import logos from "../../../public/images/illustration-laptop-desktop.svg"
-import logo from "../../../public/images/illustration-laptop-mobile.svg"
+import LaptopDesktop from "../../../public/images/illustration-laptop-desktop.svg"
+import LaptopMobile from "../../../public/images/illustration-laptop-mobile.svg"
 import style from "../../styles/Computer.module.css"
 import { useMediaQuery } from 'react-responsive'
 
@@ -29,7 +28,7 @@ const Computer = () => {
             </div>
         </div>
          <div className={style.imageContainer}>
-             {isDesktopOrMobile?<img className={style.image} src={logo} />:<img className={style.image} src={logos} /> }
+             {isDesktopOrMobile?<img className={style.image} src={LaptopMobile} />:<img className={style.image} src={LaptopDesktop} /> }
         </div>
     </div>
     )

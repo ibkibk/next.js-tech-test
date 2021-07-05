@@ -57,40 +57,34 @@ const Header = () => {
           >
              <Image   
                width="90" 
-               height="48" 
+               height="36" 
                src={logos} /> 
           </IconButton>
              {isMatch ? <DrawerComp/>:<Fragment>
            <Typography variant="h8" className={classes.title}></Typography>
            <Typography variant="h8" className={classes.title}>
-                   <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }   >
                          <Link className={classes.Link} >   
                             Company
                          </Link>
                         <ExpandMoreIcon/>
                       </ListItem> 
-                   </Typography>
            </Typography>
-           <Typography variant="h8" className={classes.title}>
-                   <Typography variant="h8" className={classes.title}>
+           <Typography variant="h7" className={classes.title}>
                       <ListItem className={classes.listed }   >
                          <Link className={classes.Link} >   
                             Product
                          </Link>
                          <ExpandMoreIcon/>
                        </ListItem> 
-                   </Typography>
            </Typography>
            <Typography variant="h8" className={classes.title}>
-                   <Typography variant="h8" className={classes.title}>
                       <ListItem className={classes.listed }  button onClick={handleOpenMenu} >
                          <Link className={classes.Link} >   
                             Connect
                          </Link>
                          {isIconOpen? <ExpandLessIcon/>:<ExpandMoreIcon/>}
                       </ListItem>              
-                   </Typography>
           </Typography>
           <Typography variant="h8" className={classes.title}></Typography>
           <Typography variant="h8" className={classes.title}></Typography>
