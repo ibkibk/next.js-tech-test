@@ -13,7 +13,7 @@ const Hero = () => {
         </p>
         <div className={classes.buttonContainer}>
           <Button className={classes.StartButton}>
-            Start for free testing
+            Start for free testing testing
           </Button>
           <Button className={classes.LearnButton}>Learn More</Button>
         </div>
